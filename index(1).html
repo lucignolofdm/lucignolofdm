@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fbff">
+  <meta name="description" content="Lucignolo — Forte dei Marmi. Negozio di abbigliamento. Contatti, Instagram e posizione.">
+  <title>Lucignolo | Forte dei Marmi</title>
+  <style>
+    :root {
+      --navy: #082d69;
+      --blue: #2868b5;
+      --sky: #e8f3ff;
+      --line: #b7d5fa;
+      --white: #fff;
+      --ink: #102f63;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(ellipse at 15% 15%, rgba(203,226,255,.55), transparent 30%),
+        radial-gradient(ellipse at 90% 75%, rgba(211,231,255,.5), transparent 27%),
+        #fbfdff;
+      overflow-x: hidden;
+      position: relative;
+    }
+    .stars { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .star { position: absolute; color: var(--blue); line-height: 1; user-select: none; }
+    .star:nth-child(3n) { color: var(--navy); }
+    .star:nth-child(4n) { color: #8cb8ed; }
+    main {
+      position: relative; z-index: 1;
+      width: min(100% - 32px, 520px);
+      margin: 0 auto;
+      padding: 42px 0 52px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .logo-wrap {
+      width: 210px; height: 210px; border: 2px solid var(--navy);
+      border-radius: 50%; background: rgba(255,255,255,.82);
+      display: grid; place-items: center;
+      box-shadow: 0 8px 24px rgba(8,45,105,.08);
+      overflow: hidden;
+    }
+    .logo-wrap img { width: 100%; height: 100%; object-fit: contain; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; font-size: clamp(2.4rem, 11vw, 3.4rem); letter-spacing: .01em; margin: 20px 0 4px; color: var(--navy); }
+    .place { font-size: .95rem; letter-spacing: .34em; text-transform: uppercase; text-align: center; margin: 0; }
+    .rule { width: 48px; height: 2px; background: var(--blue); margin: 16px 0 14px; }
+    .subtitle { margin: 0 0 34px; font-size: .86rem; letter-spacing: .19em; text-transform: uppercase; text-align: center; }
+    .links { display: flex; flex-direction: column; gap: 16px; width: 100%; }
+    .link {
+      min-height: 86px; display: flex; align-items: center; gap: 18px;
+      padding: 15px 22px; border: 1.5px solid var(--line); border-radius: 999px;
+      color: var(--navy); text-decoration: none; background: rgba(255,255,255,.92);
+      box-shadow: 0 8px 20px rgba(24,78,145,.08);
+      transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+    }
+    .link:nth-child(odd) { background: linear-gradient(110deg, #e8f3ff, #fff); }
+    .link:hover, .link:focus-visible { transform: translateY(-2px); box-shadow: 0 12px 24px rgba(24,78,145,.14); outline: none; }
+    .icon { width: 42px; height: 42px; flex: 0 0 42px; display: grid; place-items: center; }
+    .icon svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+    .copy strong { font-size: 1.08rem; font-weight: 650; }
+    .copy span { font-size: .9rem; letter-spacing: .12em; opacity: .88; overflow-wrap: anywhere; }
+    .chevron { margin-left: auto; font-size: 1.8rem; font-weight: 300; line-height: 1; }
+    footer { margin-top: 34px; font-family: Georgia, "Times New Roman", serif; font-style: italic; color: var(--blue); font-size: 1rem; text-align: center; }
+    @media (max-width: 380px) {
+      main { width: min(100% - 24px, 520px); padding-top: 32px; }
+      .logo-wrap { width: 178px; height: 178px; }
+      .link { min-height: 78px; padding: 12px 17px; gap: 12px; }
+      .copy strong { font-size: 1rem; }
+      .copy span { font-size: .82rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <div class="stars" aria-hidden="true">
+    <span class="star" style="left:6%;top:7%;font-size:27px">★</span>
+    <span class="star" style="left:21%;top:12%;font-size:13px">★</span>
+    <span class="star" style="right:9%;top:9%;font-size:25px">★</span>
+    <span class="star" style="right:18%;top:23%;font-size:14px">★</span>
+    <span class="star" style="left:7%;top:31%;font-size:22px">★</span>
+    <span class="star" style="right:6%;top:39%;font-size:17px">★</span>
+    <span class="star" style="left:13%;top:52%;font-size:14px">★</span>
+    <span class="star" style="right:13%;top:61%;font-size:26px">★</span>
+    <span class="star" style="left:6%;top:73%;font-size:20px">★</span>
+    <span class="star" style="right:7%;top:82%;font-size:14px">★</span>
+    <span class="star" style="left:22%;top:91%;font-size:25px">★</span>
+    <span class="star" style="right:24%;top:94%;font-size:19px">★</span>
+  </div>
+  <main>
+    <div class="logo-wrap">
+      <img src="logo.png" alt="Logo Lucignolo" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='grid'">
+      <div id="fallback-logo" style="display:none;place-items:center;text-align:center;color:#082d69;font-family:Georgia,serif">
+        <div><div style="font-size:3rem;line-height:1">★</div><div style="font-size:2rem;font-style:italic">Lucignolo</div></div>
+      </div>
+    </div>
+    <h1>Lucignolo</h1>
+    <p class="place">Forte dei Marmi</p>
+    <div class="rule"></div>
+    <p class="subtitle">Negozio di abbigliamento</p>
+
+    <nav class="links" aria-label="Contatti">
+      <a class="link" href="https://wa.me/393668041496" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.8a8.2 8.2 0 1 1 16-3.5Z"/><path d="M8.5 8.1c.3-.6.6-.6.9-.6h.5c.2 0 .4.1.5.5l.7 1.6c.1.3.1.5-.1.7l-.5.6c-.2.2-.2.4 0 .7.6 1 1.4 1.8 2.5 2.3.3.1.5.1.7-.1l.8-.9c.2-.2.4-.3.7-.2l1.6.8c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.6-.5.4-1.2.6-2 .4-1.1-.3-2.4-.9-3.7-2.1-1.5-1.3-2.4-2.9-2.7-3.9-.3-.9 0-1.5.5-1.9Z"/></svg></span>
+        <span class="copy"><strong>WhatsApp</strong><span>366 8041496</span></span><span class="chevron">›</span>
+      </a>
+      <a class="link" href="tel:+39058483370">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3.5 8.4 3l2 4.7-2.2 1.8a16 16 0 0 0 6.3 6.3l1.8-2.2 4.7 2-.5 3.4c-.1.8-.8 1.4-1.6 1.4C10 20.4 3.6 14 3.6 5.1c0-.8.6-1.5 1.4-1.6Z"/></svg></span>
+        <span class="copy"><strong>Telefono</strong><span>0584 83370</span></span><span class="chevron">›</span>
+      </a>
+      <a class="link" href="https://www.instagram.com/lucignolofortedeimarmi/" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.6 6.6h.01"/></svg></span>
+        <span class="copy"><strong>Instagram</strong><span>Segui il nostro profilo</span></span><span class="chevron">›</span>
+      </a>
+      <a class="link" href="https://www.facebook.com/lucignolofortedeimarmi/photos/" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7.5v3h2.8v8Z"/></svg></span>
+        <span class="copy"><strong>Facebook</strong><span>Visita la nostra pagina</span></span><span class="chevron">›</span>
+      </a>
+      <a class="link" href="https://maps.app.goo.gl/9Uv5Rws6tSNBvtxd9" target="_blank" rel="noopener noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+        <span class="copy"><strong>Dove siamo</strong><span>Apri la mappa</span></span><span class="chevron">›</span>
+      </a>
+    </nav>
+    <footer>Lucignolo · Forte dei Marmi</footer>
+  </main>
+</body>
+</html>
